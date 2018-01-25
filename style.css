@@ -1,0 +1,17 @@
+#flogo {
+    font-size:23px; font-weight:bold; color:#FFF;
+    text-decoration:none;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#logo a {
+    position: absolute;
+    top: 20px;
+    font-size:23px; font-weight:bold; color:#FFF;
+    text-decoration:none;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+    float: left;
+    height: 70px;
+    position: relative;
+    width: 160px;
+}
