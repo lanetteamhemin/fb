@@ -95,6 +95,8 @@ $result=mysqli_query($con,$query);
 <body style="background-color:#45619D ">
     <?php $photo="images/".$_SESSION['photo']; ?>
     <div class="container"  style="color:#22abe9;background-repeat: no-repeat; background-color: #dfe9ff;z-index:-1">
+
+<!--        header-->
         <div class="row setimg" style="bottom: 0.5%;padding: 2%;" >
             <div class="col-sm-3" style="width:20%;height:20%;display: inline-block;overflow: hidden;">
                 <img src="images/<?php echo $_SESSION['photo'];?>" class="set-img">
@@ -108,6 +110,28 @@ $result=mysqli_query($con,$query);
         </div>
 
         <br>
+<!--        menu-->
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="home.php">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Submenu 1-1</a></li>
+                            <li><a href="#">Submenu 1-2</a></li>
+                            <li><a href="#">Submenu 1-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="logout.php">logout</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+<!--        main content-->
         <div class="row row-divided well" >
             <div class="col-xs-2 column-one " style="font-size: 150%">
                 <a href="upload_photo.php">Upload Post</a>

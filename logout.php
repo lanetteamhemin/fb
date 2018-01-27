@@ -5,7 +5,7 @@ unset($_SESSION['id']);
 session_destroy();
 if(!(isset($_SESSION['uname'])))
 {
-    header("location:login.php");
+    header("location:index.php");
 }
 
 ?>
